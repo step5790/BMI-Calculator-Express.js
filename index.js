@@ -40,5 +40,5 @@ app.post("/bmicalculator", function (req, res) {
   var height = Number(req.body.height);
   var output = weight / Math.pow(height, 2);
 
-  res.send("Your BMI is:" + Math.round(output));
+  res.send(`Your BMI:  ${Math.round(output)}`);
 });
